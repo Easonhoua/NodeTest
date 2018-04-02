@@ -2,6 +2,9 @@
 # run
 node main.js
 
+npm install
+
+npm test
 
 
 
