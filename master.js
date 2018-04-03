@@ -26,7 +26,7 @@ exports.run = function () {
                         textarr = textarr.concat(dataArr);
                         if (index == len - 1) { // 循环到最后一个，所有的单词都在textarr里面，现在进行写入
                             for (var i = 0; i < textarr.length; i++) { //循环遍历数组，计算单词出现的次数，并放在map对象里
-                                var s = textarr[i].toLowerCase();
+                                var s = textarr[i].toLowerCase().replace('-','');
                                 var r = map[s];
                                 if (r) {
                                     map[s] += 1;
